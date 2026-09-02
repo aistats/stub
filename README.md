@@ -4,6 +4,15 @@ This repository is the GitHub template for yearly AISTATS conference websites (`
 
 The site is a [Jekyll](https://jekyllrb.com/) project hosted on GitHub Pages. Most content is driven by YAML in `_config.yml` and markdown pages; the visual chrome comes from the remote theme [`aistats/jekyll-theme`](https://github.com/aistats/jekyll-theme).
 
+## Create the yearly repo (org admin)
+
+These steps need admin access on the `aistats` GitHub organisation:
+
+1. Create a new public repository named `aistatsXXXX` from this template ([new repository](https://github.com/organizations/aistats/repositories/new)).
+2. Set a short description (dates and venue), then create the repo.
+3. Create an `aistatsXXXX` admin team and grant it admin on that repository.
+4. After the site is live, update the society landing page at [aistats.github.io](https://github.com/aistats/aistats.github.io) if this year should be listed as current.
+
 ## First steps after creating `aistats20XX`
 
 1. Set `baseurl` to `/aistats20XX/` and `repository` / `ghub.repository` in `_config.yml`.
@@ -11,7 +20,6 @@ The site is a [Jekyll](https://jekyllrb.com/) project hosted on GitHub Pages. Mo
 3. Add chair details under `conference.chairs` and a contact email under `author.email`.
 4. Place banner (and optional venue) images in `assets/images/`.
 5. Confirm the site builds at <https://aistats.org/aistats20XX/>.
-6. Update the society landing page at [aistats.github.io](https://github.com/aistats/aistats.github.io) to link the new year.
 
 Organiser workflow notes (venue, committees, submissions, and so on) live in [`_doc/`](./_doc/README.md). Those files are not published as site pages.
 

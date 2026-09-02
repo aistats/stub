@@ -43,3 +43,5 @@ Other issues you may want to consider is whether you want to colocate the confer
 
 Colocating can help international visitors with travel, and partnering a summer school with the conference is one way to make it easier to attend for students. But colocating does add an organisational overhead. It's best done if the organisers of the other meeting are people you trust (sometimes you might even be a co-organiser of the other meeting) and if it's clear who is deciding on the venue. In all the cases above, AISTATS decided the venue and the other group joined in. Indeed, before colocating with AISTATS the Learning Workshop habitually occurred in Snowbird, a ski resort in Utah.
 
+[Go back to main doc README.md](./README.md)
+
