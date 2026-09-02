@@ -1,41 +1,43 @@
-# Site settings
+# AISTATS conference site settings
+# Replace every 20XX placeholder for the new year (repo name, baseurl, year, banner title, email).
+
 title: Artificial Intelligence and Statistics Conference
-description: > # this means to ignore newlines until "baseurl:"
-  This is the website of the AISTATS 20XX conference.
-# url: "https://aistats.org"
-baseurl: "/aistats20XX/" # the subpath of your site, e.g. /blog/
-# timezone: # e.g. UTC, EST, ICT
+description: >-
+  Website for the AISTATS 20XX conference (Artificial Intelligence and Statistics).
+url: "https://aistats.org"
+baseurl: "/aistats20XX/"
+# Timezone label used in some date displays (optional), e.g. UTC, EST, ICT
+# timezone:
 
 repository: aistats/aistats20XX
 
-# If you want to create a twitter account for your conference include
-# twitter name here
+# Conference Twitter/X handle (shared society account is fine)
 twitter_username: aistats_conf
 
-github_username:  aistats
+github_username: aistats
 
 author:
   name: AISTATS
-  # Create an email for handling conference queries, e.g. aistats20XX@gmail.com.
+  # Conference contact mailbox, e.g. aistats20XX@gmail.com
   email:
 comments: false
 
-# Build settings
 markdown: kramdown
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-remote-theme
-# change encoding for the generated output files to utf-8
 encoding: utf-8
 remote_theme: aistats/jekyll-theme
+# Selects AISTATS CSS, favicon, and style-specific includes in the shared theme.
+# Likely to change under a theme revamp (tentative CIP-0002); keep as aistats until then.
 style: aistats
 
 ghub:
   edit: true
   repository: aistats20XX
 
-# Place a banner image in assets/images and give its name here.
+# Banner file must live under assets/images/
 banner: resort.png
 banner_title: Artificial Intelligence and Statistics 20XX
 
@@ -43,42 +45,49 @@ conference:
   full_name: Artificial Intelligence and Statistics
   short_name: AISTATS
   name: Artificial Intelligence and Statistics
-  # set to true if the programme is draft only.
+  # True while the public programme is still draft
   draft: true
-  # set to true to hide tentative speakers
+  # True to hide speakers marked tentative
   hide_tentative: true
-  # Place an image of venue in assets/images and give its name here
+  # Optional venue photo under assets/images/
   image: conference-venue.png
   proceedings:
-    # When proceedings are published add url here.
+    # PMLR (or other) proceedings URL once published
     url:
     show: false
-  # Give details of the room in the venue here.
   room:
-  # Set the name of the venue (e.g. Caribe Hilton Hotel)
+  # Venue name, e.g. Splash Beach Resort
   venue:
-  # Give the url of the venue here.
   venue_url:
-  # Give the conference location in the form City, Country here.
+  # City, Country
   location:
   year: 20XX
-  # Give the instance of the conference here (e.g. 29th)
+  # Ordinal instance, e.g. 29th
   instance:
-  # Styling for AISTATS is "International Conference"
   styling: International Conference on
-  # Give the individual days that the conference will be held on here.
+
+  # Conference meeting days: one YAML list entry per calendar day (not a single
+  # range string). The theme and schedule helpers iterate these as individual days.
+  # Preferred formats (pick one style and use it consistently):
+  #   - 3 May 20XX
+  #   - 4 May 20XX
+  #   - 5 May 20XX
+  # or ISO calendar dates:
+  #   - 20XX-05-03
+  #   - 20XX-05-04
+  #   - 20XX-05-05
   dates:
   - TBA
-  # Give the submission site details here.
+
+  # OpenReview (or other) submission site
   submission:
-    # Whether to show the submission site.
     show: false
-    # The URL of the submission site.
     url:
-    # The name of the submission site (e.g. OpenReview)
-    name:
+    name: OpenReview
+
+  # Key dates shown on dates.md via {% include listdates.html %}.
+  # Fields: name, type, date; optional enddate, important, time, text, old, endold, hide.
   deadlines:
-    # Fill in the key dates as below. Optional fields: enddate, important, time, text, old, endold, hide.
     - name: Abstract submission deadline
       type: submission
       date:
@@ -105,7 +114,8 @@ conference:
       date:
       enddate:
       important: true
-  # List organising chairs here. Leave people empty until appointed.
+
+  # Organising chairs (rendered on committee.html). Leave people blank until appointed.
   chairs:
   - type: General Chairs
     people:

@@ -27,7 +27,7 @@ Standard public pages match recent conferences (2023–2025):
 | `code-of-conduct.md` | Code of conduct |
 | `registration.md` | Registration |
 | `committee.html` | Organising committee from `_config.yml` |
-| `faqs.md` / `reviewer_guidelines.md` / `ac_guidelines.md` | Author and review guidance |
+| `faqs.md` / `reviewer_guidelines.md` / `ac_guidelines.md` | Author and review guidance (guidelines are seeded from recent years; edit in place, then fold improvements back into this stub) |
 | `invited.md` / `schedule.md` / `awards.md` | Programme |
 | `camera.md` / `poster.md` | Camera-ready and posters |
 | `other.md` | Past meetings (usually hidden) |
