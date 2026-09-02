@@ -30,7 +30,7 @@ plugins:
 encoding: utf-8
 remote_theme: aistats/jekyll-theme
 # Selects AISTATS CSS, favicon, and style-specific includes in the shared theme.
-# Likely to change under a theme revamp (tentative CIP-0002); keep as aistats until then.
+# Clarified or replaced under CIP-0002 Phase C (branding); keep as aistats until then.
 style: aistats
 
 ghub:

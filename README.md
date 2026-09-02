@@ -15,6 +15,8 @@ The site is a [Jekyll](https://jekyllrb.com/) project hosted on GitHub Pages. Mo
 
 Organiser workflow notes (venue, committees, submissions, and so on) live in [`_doc/`](./_doc/README.md). Those files are not published as site pages.
 
+Programme management (CIPs, backlog, VibeSafe) for AISTATS sites and themes lives in the sibling **site-management** repository (`aistats/site-management`), not in this template.
+
 ## Page layout
 
 Standard public pages match recent conferences (2023–2025):
