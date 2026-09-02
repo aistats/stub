@@ -3,7 +3,7 @@
 When each of these is done you can cross them off using ~~two tildes for strike through like this~~.
 
 1. Decide [whether to colocate](./venue.md).
-   1. Mention any colocated events in the [home page](../index.html).
+   1. Mention any colocated events in the [home page](../index.md).
 2. Choose [the venue](./venue.md).
    1. Update the venue in the [`_config.yml`](../_config.yml) file.
 3. Select [the dates](./venue.md).

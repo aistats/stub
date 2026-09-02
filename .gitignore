@@ -1,0 +1,16 @@
+# Local Jekyll / Ruby
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+Gemfile.lock
+
+# OS / editor
+.DS_Store
+*~
+*.swp
+.idea/
+.vscode/
+*.code-workspace

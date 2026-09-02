@@ -1,39 +1,51 @@
-# AISTATS Conference Template Site
+# AISTATS Conference Stub Site
 
-Welcome to the AISTATS Site.
+This repository is the GitHub template for yearly AISTATS conference websites (`aistats20XX`). Create a new public repository from this template, then replace the `20XX` placeholders.
 
-If As well as providing information about the society and past meetings, the pages detail how to create 
+The site is a [Jekyll](https://jekyllrb.com/) project hosted on GitHub Pages. Most content is driven by YAML in `_config.yml` and markdown pages; the visual chrome comes from the remote theme [`aistats/jekyll-theme`](https://github.com/aistats/jekyll-theme).
 
-**These steps need to be done by someone with admin access to the aistats github organization**
+## Create the yearly repo (org admin)
 
-1. Create the new repo in github by going to <https://github.com/organizations/aistats/repositories/new>, use the name coding `aistatsXXXX` where `XXXX` is the year of the archived conference. 
+These steps need admin access on the `aistats` GitHub organisation:
 
-2. Select "Create from Template" using stub as the template
+1. Create a new public repository named `aistatsXXXX` from this template ([new repository](https://github.com/organizations/aistats/repositories/new)).
+2. Set a short description (dates and venue), then create the repo.
+3. Create an `aistatsXXXX` admin team and grant it admin on that repository.
+4. After the site is live, update the society landing page at [aistats.github.io](https://github.com/aistats/aistats.github.io) if this year should be listed as current.
 
-3. Give the conference a description, "April 9 - 11, Playa Blanca, Lanzarote, Canary Islands"
+## First steps after creating `aistats20XX`
 
-4. Make sure the repo is set to 'public'.
+1. Set `baseurl` to `/aistats20XX/` and `repository` / `ghub.repository` in `_config.yml`.
+2. Fill `conference.year`, `instance`, `location`, `venue`, `dates`, `banner`, and `banner_title`.
+3. Add chair details under `conference.chairs` and a contact email under `author.email`.
+4. Place banner (and optional venue) images in `assets/images/`.
+5. Confirm the site builds at <https://aistats.org/aistats20XX/>.
 
-5. Create the Repo.
+Organiser workflow notes (venue, committees, submissions, and so on) live in [`_doc/`](./_doc/README.md). Those files are not published as site pages.
 
-6. Edit the `_config.yml` file in the new repo to set `baseurl` to `/aistatsXXXX`
+Programme management (CIPs, backlog, VibeSafe) for AISTATS sites and themes lives in the sibling **site-management** repository (`aistats/site-management`), not in this template.
 
-8. Check that the stub website appears online at http://aistats.org/aistatsXXXX/
+## Page layout
 
-9. Update the main AISTATS site to list the current year's conference (presuming that the previous year's hs finised) [https://github.com/aistats/aistats.github.io](https://github.com/aistats/aistats.github.io).
+Standard public pages match recent conferences (2023–2025):
 
-11. Create a new admin team for this year's page, `aistatsXXXX`, and assign it to admin `aistatsXXXX` 
+| File | Purpose |
+|------|---------|
+| `index.md` | Home |
+| `dates.md` | Key dates (`{% include listdates.html %}`) |
+| `call-for-papers.md` | Call for papers |
+| `code-of-conduct.md` | Code of conduct |
+| `registration.md` | Registration |
+| `committee.html` | Organising committee from `_config.yml` |
+| `faqs.md` / `reviewer_guidelines.md` / `ac_guidelines.md` | Author and review guidance (guidelines are seeded from recent years; edit in place, then fold improvements back into this stub) |
+| `invited.md` / `schedule.md` / `awards.md` | Programme |
+| `camera.md` / `poster.md` | Camera-ready and posters |
+| `other.md` | Past meetings (usually hidden) |
 
-## More information
+Optional venue starters are underscored (`_accommodation.html`, `_local.html`) so they stay out of the nav until you promote them.
 
-* See  a list of repositories of past web sites [here](https://github.com/aistats/).
+## Technical notes
 
-* This link gives [Github help about project
-pages](https://help.github.com/articles/user-organization-and-project-pages/)
-(at the bottom), if we put the Jekyll files in **gh-pages** branch, the repository
-will be served under http://aistats.org/aistats20xx. Note that the main
-repository (http://github/aistats.github.io.git) master branch, not gh-pages.
-
-
-* Repository set up by Neil Lawrence and first conversion of the old pages by Wittawat. Pages then arcived for the 2016 and 2017 editions of the conference. 
-
+- Edit YAML and markdown rather than inventing new HTML layouts when possible.
+- Local includes under `_includes/` override theme fragments for the banner and date lists.
+- For local builds you may need `webrick` in the `Gemfile` on newer Ruby versions.
