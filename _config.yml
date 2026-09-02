@@ -109,6 +109,13 @@ conference:
       type: submission
       date:
       important: true
+    - name: Journal-to-Conference track deadline
+      type: submission
+      date:
+      important: true
+    - name: Workshop submission deadline
+      type: submission
+      date:
     - name: Conference dates
       type: submission
       date:

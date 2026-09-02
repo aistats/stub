@@ -25,24 +25,41 @@ Organiser workflow notes (venue, committees, submissions, and so on) live in [`_
 
 Programme management (CIPs, backlog, VibeSafe) for AISTATS sites and themes lives in the sibling **site-management** repository (`aistats/site-management`), not in this template.
 
+## Jekyll site vs virtual.aistats.org
+
+Yearly repos on GitHub Pages (`aistats.org/aistats20XX/`) archive stable conference information. The live operations site is [virtual.aistats.org](https://virtual.aistats.org/).
+
+| Keep on the Jekyll year site | Prefer virtual (link out) |
+|------|---------|
+| Key dates in `_config.yml` / `dates.md` | Registration checkout and attendee portal |
+| Call for papers, CoC, FAQs, review guidelines | Paper browser / OpenReview listings |
+| Invited speakers, awards, camera-ready and poster policy | Interactive schedule and session abstracts |
+| Journal-to-conference and workshop *calls* (summary) | Workshop/session detail pages once published |
+| Committee from `_config.yml` | Hotel booking blocks and live travel updates |
+| Proceedings link when PMLR is up | Sponsor application portal |
+
+Do not copy large virtual-only catalogues (full paper lists, calendar feeds, booking engines) into the stub. Seed a short page here, then point to virtual when that system is the source of truth.
+
 ## Page layout
 
-Standard public pages match recent conferences (2023–2025):
+Standard public pages match recent conferences (2023–2026):
 
 | File | Purpose |
 |------|---------|
 | `index.md` | Home |
 | `dates.md` | Key dates (`{% include listdates.html %}`) |
 | `call-for-papers.md` | Call for papers |
+| `journal-track.md` | Journal-to-Conference track call / acceptances |
+| `workshops.md` | Workshop call and links to the workshop programme |
 | `code-of-conduct.md` | Code of conduct |
-| `registration.md` | Registration |
+| `registration.md` | Registration (usually links to virtual) |
 | `committee.html` | Organising committee from `_config.yml` |
 | `faqs.md` / `reviewer_guidelines.md` / `ac_guidelines.md` | Author and review guidance (guidelines are seeded from recent years; edit in place, then fold improvements back into this stub) |
 | `invited.md` / `schedule.md` / `awards.md` | Programme |
 | `camera.md` / `poster.md` | Camera-ready and posters |
 | `other.md` | Past meetings (usually hidden) |
 
-Optional venue starters are underscored (`_accommodation.html`, `_local.html`) so they stay out of the nav until you promote them.
+Optional venue starters are underscored (`_accommodation.html`, `_local.html`) so they stay out of the nav until you promote them. Prefer linking to virtual Hotels / Visit / Visa pages when those are maintained there.
 
 ## Technical notes
 

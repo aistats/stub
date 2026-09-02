@@ -13,10 +13,11 @@ When each of these is done you can cross them off using ~~two tildes for strike 
 6. Start advertising. 
    1. If you created a twitter account, add it to the [`_config.yml`](../_config.yml)
 7. First pass budget.
-8. Finalise [invited speakers](./invited-speakers.md) and add the speakers to the [invited speakers page](../speakers.html).
+8. Finalise [invited speakers](./invited-speakers.md) and add the speakers to the [invited speakers page](../invited.md).
 8. Approach [sponsors](./sponsors.md).
 9. Select a submission system: add the submission system to the [`_config.yml`](../_config.yml) file.
-10. Select your key dates: add the key dates to the [`_config.yml`](../_config.yml) file.
+10. Select your key dates: add the key dates to the [`_config.yml`](../_config.yml) file (including journal-track and workshop deadlines when used).
+10a. Publish the [Journal-to-Conference](../journal-track.md) and [workshop](../workshops.md) calls when those tracks run.
 11. Appoint your area chairs.
 12. Finnalise sponsors: add the sponsors to the [sponsors page](../sponsors.html).
 12. Finalise budget.
