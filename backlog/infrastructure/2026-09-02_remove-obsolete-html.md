@@ -1,7 +1,7 @@
 ---
 id: "2026-09-02_remove-obsolete-html"
 title: "Remove or underscore obsolete stub HTML pages"
-status: "Ready"
+status: "Completed"
 priority: "High"
 created: "2026-09-02"
 last_updated: "2026-09-02"
@@ -26,10 +26,10 @@ Stop shipping the 2020 live HTML pages that recent conferences no longer use. De
 
 ## Acceptance Criteria
 
-- [ ] `index.html` removed (home is `index.md`)
-- [ ] No live `accommodation.html`, `local.html`, `submission.html`, or `submit.html` in the nav surface
-- [ ] Registration is markdown (`registration.md`) rather than the old HTML page
-- [ ] Any retained venue helpers are underscored and not linked from default nav
+- [x] `index.html` removed (home is `index.md`)
+- [x] No live `accommodation.html`, `local.html`, `submission.html`, or `submit.html` in the nav surface
+- [x] Registration is markdown (`registration.md`) rather than the old HTML page
+- [x] Any retained venue helpers are underscored and not linked from default nav
 
 ## Implementation Notes
 
@@ -44,3 +44,7 @@ Prefer underscore over delete for accommodation/local if `_doc` still references
 ### 2026-09-02
 
 Task created at Ready status after CIP-0001 acceptance.
+
+### 2026-09-02
+
+Implemented on branch `cip0001-refresh-stub`.

@@ -1,7 +1,7 @@
 ---
 id: "2026-09-02_markdown-page-stubs"
 title: "Add markdown page stubs and updated committee.html"
-status: "Ready"
+status: "Completed"
 priority: "High"
 created: "2026-09-02"
 last_updated: "2026-09-02"
@@ -26,11 +26,11 @@ Add the standard conference markdown pages with front matter and short TODO bodi
 
 ## Acceptance Criteria
 
-- [ ] Present: `index.md`, `call-for-papers.md`, `code-of-conduct.md`, `dates.md`, `faqs.md`, `reviewer_guidelines.md`, `ac_guidelines.md`, `invited.md`, `schedule.md`, `awards.md`, `camera.md`, `poster.md`, `registration.md`, `other.md`
-- [ ] `dates.md` includes `{% include listdates.html %}`
-- [ ] `other.md` uses `layout: other` and `hide: true`
-- [ ] `committee.html` matches the 2025/2026 chairs-rendering pattern
-- [ ] Page weights roughly match recent nav practice
+- [x] Present: `index.md`, `call-for-papers.md`, `code-of-conduct.md`, `dates.md`, `faqs.md`, `reviewer_guidelines.md`, `ac_guidelines.md`, `invited.md`, `schedule.md`, `awards.md`, `camera.md`, `poster.md`, `registration.md`, `other.md`
+- [x] `dates.md` includes `{% include listdates.html %}`
+- [x] `other.md` uses `layout: other` and `hide: true`
+- [x] `committee.html` matches the 2025/2026 chairs-rendering pattern
+- [x] Page weights roughly match recent nav practice
 
 ## Implementation Notes
 
@@ -45,3 +45,7 @@ Bodies should be placeholders (headings + TODO), not copied 2025 prose. Front ma
 ### 2026-09-02
 
 Task created at Ready status after CIP-0001 acceptance.
+
+### 2026-09-02
+
+Implemented on branch `cip0001-refresh-stub`.

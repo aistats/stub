@@ -29,4 +29,4 @@ conference:
     name: 
 ```
 
-That will auto generate some text in the `submit.html` page. You can fill in details around submission on that page and it will appear below. 
+That will auto generate some text related to the submission site. Put author-facing instructions on `call-for-papers.md` (and related FAQ/guideline pages) as needed.

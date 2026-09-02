@@ -1,7 +1,7 @@
 ---
 id: "2026-09-02_modernise-config-readme"
 title: "Modernise stub _config.yml and README for aistats/jekyll-theme"
-status: "Ready"
+status: "Completed"
 priority: "High"
 created: "2026-09-02"
 last_updated: "2026-09-02"
@@ -26,10 +26,10 @@ Rewrite `_config.yml` to the 2023–2025 contract: `remote_theme: aistats/jekyll
 
 ## Acceptance Criteria
 
-- [ ] No reference to `lawrennd/proceedings` in `_config.yml` or `README.md`
-- [ ] `_config.yml` includes `banner_title`, `repository`, and `20XX` placeholders only (no real venue year copy)
-- [ ] Chair stubs include General, Program, Workflow, Local, Publication, Sponsorship, D&I/Inclusivity, Journal-to-Conference
-- [ ] README states template purpose and links organiser docs under `_doc/` (or notes the pending migrate task)
+- [x] No reference to `lawrennd/proceedings` in `_config.yml` or `README.md`
+- [x] `_config.yml` includes `banner_title`, `repository`, and `20XX` placeholders only (no real venue year copy)
+- [x] Chair stubs include General, Program, Workflow, Local, Publication, Sponsorship, D&I/Inclusivity, Journal-to-Conference
+- [x] README states template purpose and links organiser docs under `_doc/` (or notes the pending migrate task)
 
 ## Implementation Notes
 
@@ -44,3 +44,7 @@ Use aistats2025 `_config.yml` as the shape reference; strip real people, dates, 
 ### 2026-09-02
 
 Task created at Ready status after CIP-0001 acceptance.
+
+### 2026-09-02
+
+Implemented on branch `cip0001-refresh-stub`.

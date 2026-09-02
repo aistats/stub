@@ -1,7 +1,7 @@
 ---
 id: "2026-09-02_includes-and-doc-migrate"
 title: "Add _includes and migrate doc/ to _doc/"
-status: "Ready"
+status: "Completed"
 priority: "High"
 created: "2026-09-02"
 last_updated: "2026-09-02"
@@ -26,10 +26,10 @@ Copy sanitised `_includes/banner.html`, `listdates.html`, and `tabledates.html` 
 
 ## Acceptance Criteria
 
-- [ ] `_includes/banner.html`, `_includes/listdates.html`, `_includes/tabledates.html` exist
-- [ ] Organiser docs live under `_doc/` (not `doc/`)
-- [ ] Internal `_doc` links updated for new page filenames where they mention old HTML names
-- [ ] No published `doc/` directory remains (or it is empty and removed)
+- [x] `_includes/banner.html`, `_includes/listdates.html`, `_includes/tabledates.html` exist
+- [x] Organiser docs live under `_doc/` (not `doc/`)
+- [x] Internal `_doc` links updated for new page filenames where they mention old HTML names
+- [x] No published `doc/` directory remains (or it is empty and removed)
 
 ## Implementation Notes
 
@@ -44,3 +44,7 @@ Can proceed in parallel with markdown page stubs once config/README is done. Kee
 ### 2026-09-02
 
 Task created at Ready status after CIP-0001 acceptance.
+
+### 2026-09-02
+
+Implemented on branch `cip0001-refresh-stub`.

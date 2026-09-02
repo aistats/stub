@@ -1,7 +1,7 @@
 ---
 id: "2026-09-02_stub-smoke-check"
 title: "Smoke-check stub against 2025 page matrix"
-status: "Ready"
+status: "Completed"
 priority: "Medium"
 created: "2026-09-02"
 last_updated: "2026-09-02"
@@ -29,10 +29,10 @@ Verify the refreshed stub matches the 2023–2025 common page/include matrix, co
 
 ## Acceptance Criteria
 
-- [ ] File-presence checklist vs 2025 common pages passes
-- [ ] Grep finds no `lawrennd/proceedings`, and no real city/year copy outside intentional examples
-- [ ] Optional: `bundle exec jekyll build` succeeds with placeholder `baseurl`
-- [ ] Nav weights / `hide` flags reviewed for an early-conference surface
+- [x] File-presence checklist vs 2025 common pages passes
+- [x] Grep finds no `lawrennd/proceedings`, and no real city/year copy outside intentional examples
+- [x] Optional: `bundle exec jekyll build` succeeds with placeholder `baseurl`
+- [x] Nav weights / `hide` flags reviewed for an early-conference surface
 
 ## Implementation Notes
 
@@ -47,3 +47,7 @@ Record any gaps as follow-up backlog items rather than silently skipping.
 ### 2026-09-02
 
 Task created at Ready status after CIP-0001 acceptance.
+
+### 2026-09-02
+
+Implemented on branch `cip0001-refresh-stub`.
