@@ -3,4 +3,23 @@ title: Accommodation
 layout: default
 ---
 
-<!-- Give information on hotels and where to stay here -->
+{% comment %}
+  Underscored so it stays out of nav until promoted to accommodation.md.
+  Year site is primary: set conference.venue / location / dates / venue_url in
+  _config.yml. venue_url should be the hotel or booking page (not a virtual default).
+{% endcomment %}
+
+# Accommodation
+
+{% if site.conference.venue %}
+{{ site.conference.short_name }} {{ site.conference.year }} will take place at
+{% if site.conference.venue_url %}[{{ site.conference.venue }}]({{ site.conference.venue_url }}){% else %}**{{ site.conference.venue }}**{% endif %}{% if site.conference.location %} in {{ site.conference.location }}{% endif %}.
+{% if site.conference.dates and site.conference.dates.first and site.conference.dates.first != "TBA" %}
+The conference dates are
+**{{ site.conference.dates.first | date: "%B %-d" }}–{{ site.conference.dates.last | date: "%B %-d, %Y" }}**.
+{% endif %}
+{% else %}
+Venue and hotel details will appear here once `conference.venue` is set in `_config.yml`.
+{% endif %}
+
+Add room-block and booking notes here as they are confirmed. Rename this file to `accommodation.md` when it should appear in the site navigation.

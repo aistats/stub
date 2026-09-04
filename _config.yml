@@ -6,8 +6,9 @@ description: >-
   Website for the AISTATS 20XX conference (Artificial Intelligence and Statistics).
 url: "https://aistats.org"
 baseurl: "/aistats20XX/"
-# Timezone label used in some date displays (optional), e.g. UTC, EST, ICT
-# timezone:
+# Timezone for deadline display (listdates.html). Use AOE for Anywhere on Earth
+# (end of day). Override per deadline with tz: UTC (or CEST, …).
+timezone: AOE
 
 repository: aistats/aistats20XX
 
@@ -86,12 +87,15 @@ conference:
     name: OpenReview
 
   # Key dates shown on dates.md via {% include listdates.html %}.
-  # Fields: name, type, date; optional enddate, important, time, text, old, endold, hide.
+  # Fields: name, type, date; optional enddate, important, time, text, old, endold,
+  # hide, tz (AOE | UTC | …; defaults to site.timezone).
+  # Store parseable dates only — do not put "Anywhere on Earth" in date strings.
   deadlines:
     - name: Abstract submission deadline
       type: submission
       date:
       important: true
+      # tz: AOE
     - name: Paper submission deadline
       type: submission
       date:

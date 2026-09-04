@@ -8,8 +8,22 @@ hide: false
 # Call for Papers
 
 <!-- TODO: Add the call for papers text, topics, and submission instructions.
-     Mirror the public call from virtual.aistats.org when that page is the live
-     source, or keep this page as the archival copy. -->
+     Keep venue/location/meeting days in Liquid from _config.yml (year site is
+     primary). Mirror virtual only for body prose when that is the live draft. -->
+
+{% if site.conference.location or site.conference.dates %}
+Accepted papers will be presented at the conference
+{% if site.conference.location %} in {{ site.conference.location }}{% endif %}
+{% if site.conference.dates and site.conference.dates.first and site.conference.dates.first != "TBA" %}
+  from {{ site.conference.dates.first | date: "%B %-d" }}–{{ site.conference.dates.last | date: "%B %-d, %Y" }}
+{% elsif site.conference.year %}
+  in {{ site.conference.year }}
+{% endif %}.
+{% endif %}
+
+## Key dates
+
+{% include listdates.html %}
 
 {% if site.conference.submission.url %}
 Submissions are handled at [{{ site.conference.submission.url }}]({{ site.conference.submission.url }}).

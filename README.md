@@ -47,22 +47,23 @@ Standard public pages match recent conferences (2023–2026):
 | File | Purpose |
 |------|---------|
 | `index.md` | Home |
-| `dates.md` | Key dates (`{% include listdates.html %}`) |
-| `call-for-papers.md` | Call for papers |
+| `dates.md` | Key dates (`{% include listdates.html %}`; `timezone: AOE` by default) |
+| `call-for-papers.md` | Call for papers (key dates via include; location/dates from config) |
 | `journal-track.md` | Journal-to-Conference track call / acceptances |
 | `workshops.md` | Workshop call and links to the workshop programme |
 | `code-of-conduct.md` | Code of conduct |
-| `registration.md` | Registration (usually links to virtual) |
+| `registration.md` | Registration (meeting days from config; checkout link when ready) |
 | `committee.html` | Organising committee from `_config.yml` |
 | `faqs.md` / `reviewer_guidelines.md` / `ac_guidelines.md` | Author and review guidance (guidelines are seeded from recent years; edit in place, then fold improvements back into this stub) |
-| `invited.md` / `schedule.md` / `awards.md` | Programme |
+| `invited.md` / `schedule.md` / `awards.md` | Programme (schedule summarises `conference.dates`) |
 | `camera.md` / `poster.md` | Camera-ready and posters |
 | `other.md` | Past meetings (usually hidden) |
 
-Optional venue starters are underscored (`_accommodation.html`, `_local.html`) so they stay out of the nav until you promote them. Prefer linking to virtual Hotels / Visit / Visa pages when those are maintained there.
+Optional venue starters are underscored (`_accommodation.html`, `_local.html`) so they stay out of the nav until you promote them (e.g. rename to `accommodation.md`). Set `conference.venue_url` to the hotel or booking page when you have one — the year site is primary.
 
 ## Technical notes
 
 - Edit YAML and markdown rather than inventing new HTML layouts when possible.
-- Local includes under `_includes/` override theme fragments for the banner and date lists.
+- Local includes under `_includes/` override theme fragments (including `listdates.html`).
+- Deadline timezone: top-level `timezone: AOE` (Anywhere on Earth). Override a single deadline with `tz: UTC` (or another zone). Keep date values parseable; do not put “Anywhere on Earth” inside YAML date strings.
 - For local builds you may need `webrick` in the `Gemfile` on newer Ruby versions.
