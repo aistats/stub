@@ -33,4 +33,5 @@ When each of these is done you can cross them off using ~~two tildes for strike 
 21. [Finalise program](./schedule.md).
 22. Receive Camera Ready Papers
 23. [Finalise Proceedings](./proceedings.md).
+23a. After the meeting, keep the year site as the archive: run a [virtual sync report](./virtual-sync.md) (compare-first) and send a virtual update request if virtual lagged; do not dump live calendar or checkout pages into markdown.
 24. Attend the conference.
