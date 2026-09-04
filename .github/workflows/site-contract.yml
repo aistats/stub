@@ -1,0 +1,21 @@
+name: Site contract
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - gh-pages
+
+jobs:
+  tier-a:
+    name: Tier A contract
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run check_year_site.py
+        run: python3 scripts/check_year_site.py --root .
