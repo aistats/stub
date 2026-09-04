@@ -12,7 +12,7 @@ weight: 2
 {{ site.conference.dates.last | date: "%A, %B %-d, %Y" }}
 {% if site.conference.location %} in {{ site.conference.location }}{% endif %}.
 {% else %}
-Meeting days will appear here once `conference.dates` is set in `_config.yml`.
+Meeting days will appear here once conference dates are announced.
 {% endif %}
 
 <!-- Prefer linking out for session-level interactive calendars; keep a short
